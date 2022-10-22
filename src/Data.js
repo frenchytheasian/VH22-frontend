@@ -32,9 +32,9 @@ function Data() {
         return <div>Error: {error.message}</div>;
     } else {
         return (
-            <div>
+            <h1>
                 {data.message}
-            </div>
+            </h1>
         );
     }
 }
