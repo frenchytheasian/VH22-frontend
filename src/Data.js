@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { CircularProgress } from '@chakra-ui/react';
 
 function Data() {
     const [data, setData] = useState(null);
@@ -26,7 +27,7 @@ function Data() {
     }, [])
 
     if (!loaded) {
-        return <div>Loading...</div>;
+        return <div><CircularProgress isIndeterminate color='green.300' /></div>;
     } else if (error) {
         return <div>Error: {error.message}</div>;
     } else {
