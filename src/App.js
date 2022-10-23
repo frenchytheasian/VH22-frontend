@@ -63,16 +63,15 @@ function App() {
     <h2>
       <AccordionButton>
         <Box flex='1' textAlign='left'>
-          Section 1 title
+          <a> What's a name you would NEVER give your child?</a>
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+      <h1>9.7K Upvotes - 14.1K Comments&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <a href='https://www.reddit.com/r/AskReddit/comments/yaugmy/whats_a_name_you_would_never_give_to_your_child/'className="blue-link"><u>Click Here</u></a>
+      </h1>
     </AccordionPanel>
   </AccordionItem>
 
@@ -80,16 +79,15 @@ function App() {
     <h2>
       <AccordionButton>
         <Box flex='1' textAlign='left'>
-          Section 2 title
+           <a>Thousands of Protesters March in Central London to call for UK to rejoin the EU.</a>
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+      <h1>41.9K Upvotes - 2.8K Comments&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <a href='https://www.reddit.com/r/worldnews/comments/yav8t8/thousands_of_protesters_march_in_central_london/'  className="blue-link"><u>Click Here</u></a>
+      </h1>
     </AccordionPanel>
   </AccordionItem>
 </Accordion>
