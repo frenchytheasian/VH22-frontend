@@ -37,8 +37,13 @@
 .table{
     width: 1000px;
     text-align: left;
+    padding-top: 30px;
 }
 
 .blue-link{
     color: blue;
+}
+
+.stats{
+    padding-left: 50px;
 }

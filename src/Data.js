@@ -4,7 +4,7 @@ import SentimentTable from "./SentimentTable";
 
 function Data({ data }) {
     return (
-        <div>
+        <div className="stats">
             <Stat>
                 <StatLabel>Positive</StatLabel>
                 <StatNumber>{data.positive} / {data.total}</StatNumber>
