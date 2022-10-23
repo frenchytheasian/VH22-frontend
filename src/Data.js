@@ -7,13 +7,13 @@ function Data({ data }) {
         <div>
             <Stat>
                 <StatLabel>Positive</StatLabel>
-                <StatNumber>{data.positive} / {data.total}</StatNumber>
+                <StatNumber>20 / 30</StatNumber>
             </Stat>
             <Stat>
                 <StatLabel>Negative</StatLabel>
-                <StatNumber>{data.negative} / {data.total}</StatNumber>
+                <StatNumber>20 / 30</StatNumber>
             </Stat>
-            <SentimentTable data={data}/>
+            <SentimentTable data={{'comments': ['hi', 'no', 'hea;ljeisdjf;aishvioeah;voi', 'hiowa;ihf;ioeaho;idhvoiawehcoihoie;haew']}}/>
         </div>
 
     );
