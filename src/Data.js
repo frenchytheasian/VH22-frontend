@@ -1,42 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { CircularProgress } from '@chakra-ui/react';
+import React from "react";
+import { Stat, StatLabel, StatNumber } from "@chakra-ui/react";
 
-function Data() {
-    const [data, setData] = useState(null);
-    const [loaded, setLoaded] = useState(false);
-    const [error, setError] = useState(null);
+function Data({ data }) {
+    return (
+        <div>
+            <Stat>
+                <StatLabel>Positive</StatLabel>
+                <StatNumber>{data.positive} / {data.total}</StatNumber>
+            </Stat>
+            <Stat>
+                <StatLabel>Negative</StatLabel>
+                <StatNumber>{data.negative} / {data.total}</StatNumber>
+            </Stat>
+        </div>
 
-    useEffect(() => {
-        fetch("http://127.0.0.1:8000")
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    setLoaded(true);
-                    setData(result);
-                    console.log(result);
-                },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
-                (error) => {
-                    setLoaded(true);
-                    setError(error);
-                    console.error(error);
-                }
-            )
-    }, [])
+    );
 
-    if (!loaded) {
-        return <div className='align'><CircularProgress isIndeterminate color='green.300' /></div>;
-    } else if (error) {
-        return <div>Error: {error.message}</div>;
-    } else {
-        return (
-            <h1>
-                {data.message}
-            </h1>
-        );
-    }
 }
 
 export default Data;
