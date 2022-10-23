@@ -63,13 +63,15 @@ function App() {
     <h2>
       <AccordionButton>
         <Box flex='1' textAlign='left'>
-          #1 Most Popular Reddit Topic
+          <a> What's a name you would NEVER give your child?</a>
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Insert body text here.
+      <h1>9.7K Upvotes - 14.1K Comments&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <a href='https://www.reddit.com/r/AskReddit/comments/yaugmy/whats_a_name_you_would_never_give_to_your_child/'className="blue-link"><u>Click Here</u></a>
+      </h1>
     </AccordionPanel>
   </AccordionItem>
 
@@ -77,13 +79,15 @@ function App() {
     <h2>
       <AccordionButton>
         <Box flex='1' textAlign='left'>
-          #2 Most Popular Reddit Topic
+           <a>Thousands of Protesters March in Central London to call for UK to rejoin the EU.</a>
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      Insert body here.
+      <h1>41.9K Upvotes - 2.8K Comments&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <a href='https://www.reddit.com/r/worldnews/comments/yav8t8/thousands_of_protesters_march_in_central_london/'  className="blue-link"><u>Click Here</u></a>
+      </h1>
     </AccordionPanel>
   </AccordionItem>
 </Accordion>
