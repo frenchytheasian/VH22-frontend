@@ -22,3 +22,19 @@
     font-weight: bold;
     padding: 50px;
 }
+
+.comment-cell{
+    width: 50%;
+    overflow: scroll;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.table{
+    width: 1000px;
+    text-align: left;
+}

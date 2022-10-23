@@ -51,7 +51,7 @@ function App() {
           </Button>} onClick={handleSubmit} />
         </InputGroup>
       </div>
-      {submitted && <Data data={sentiment} />}
+      {submitted && loaded && <Data data={sentiment} />}
     </>
   );
 }

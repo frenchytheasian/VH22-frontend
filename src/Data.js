@@ -1,5 +1,6 @@
 import React from "react";
 import { Stat, StatLabel, StatNumber } from "@chakra-ui/react";
+import SentimentTable from "./SentimentTable";
 
 function Data({ data }) {
     return (
@@ -12,6 +13,7 @@ function Data({ data }) {
                 <StatLabel>Negative</StatLabel>
                 <StatNumber>{data.negative} / {data.total}</StatNumber>
             </Stat>
+            <SentimentTable data={data}/>
         </div>
 
     );
